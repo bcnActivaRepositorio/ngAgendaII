@@ -1,0 +1,27 @@
+<br>
+<div class="container" [ngClass] = "setClasses()">
+
+  <div class="card">
+    <div class="card-content">
+      <p class=" title text-center">
+        <input (change) = 'onToggle(todo)' type="checkbox">
+        {{ todo?.title }}
+        <button class="del" (click) = "onDelete(todo)" >x</button>
+      </p>
+    </div>
+    <footer class="card-footer">
+      <p class="card-footer-item">
+        <span>
+          View on <a href="{{ myGit }}" target="_blank" rel="noreferrer">GitHub</a>
+        </span>
+      </p>
+      <p class="card-footer-item">
+        <span>
+          Share on <a href="{{ allGit }}" rel="noreferrer">GitHub</a>
+        </span>
+      </p>
+    </footer>
+  </div>
+</div>
+
+
